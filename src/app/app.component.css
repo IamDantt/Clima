@@ -1,11 +1,8 @@
-
-.titulo{
-    text-align: center;
-}
 .img{
     
 }
 .seccion{
+  padding: 3rem;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -28,6 +25,38 @@
     background-position: center;
     background-size: 100%;
 }
+
+
+div.detalle {
+  width: 100%;
+  margin: 3rem auto;
+  color: rgb(63, 62, 62);
+}
+div.detalle img.derecha {
+  float: right;
+  margin-left: 5px;
+  width: 0 auto;
+}
+.derecha{
+  width: 60%;
+  height: 110%;
+}
+div.reset {
+  clear: both;
+}
+.textTi{
+  text-align: center;
+  margin: auto;
+  padding: .6rem;
+}
+.textTe{
+  
+  text-align: center;
+  margin: auto;
+  padding: .6rem;
+}
+
+
 .datos{
     text-align: center;
     display: flex;

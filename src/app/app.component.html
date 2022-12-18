@@ -1,23 +1,26 @@
-
-<h1 class="titulo">{{titulo}}</h1>
-
 <div class="seccion">
     
-  <div class="card">
+  <div [style.background-image]="backImg" class="card">
     <div class="datos">
       <form (submit)="submitLocation(cityName)">
-        <input type="text" class="form" placeholder="Ciudad" name="" id="" #cityName>
+        <input type="text" class="form fontR" placeholder="Ciudad" name="" id="" #cityName>
         <button class="bn632-hover bn26">Buscar</button>
       </form>
   </div>
     <!-- <img class="img" src="../assets/Img/Day.png" alt=""> -->
-    <div  class="box-info">
-      <div *ngIf="weather">
+    <div  class="container-fluid box-info fontR">
+      <div class="detalle">
+        <img class="derecha" src="../assets/Img/SunCloud.png">
+        <aside class="textTi">{{weather.name}}</aside>
+        <aside class="textTe">{{weather.main.temp}} ℃</aside>
+        <div class="reset"></div>
+      </div>
+      <!-- <div class="info" *ngIf="weather">
+        <p>*</p>
         <p>Ciudad: {{weather.name}}</p>
-        <p>Temperatura: {{weather.main.temp}}</p>
-        <p>Viento: {{weather.wind.speed}}</p>
-        <p>Description {{weather.weather[0].description}}</p>
-      </div>      
+        <p>*</p>
+        <p>Temperatura: {{weather.main.temp}}</p>        
+      </div>       -->
     </div>
   </div>
 </div>
