@@ -1,13 +1,18 @@
 <div class="seccion">
     
   <div [style.background-image]="backImg" class="card">
+    <div class="titulo">
+      <h1>Sky Watch</h1>
+    </div>
+
     <div class="datos">
       <form (submit)="submitLocation(cityName)">
-        <input type="text" class="form fontR" placeholder="Ciudad" name="" id="" #cityName>
-        <button class="bn632-hover bn26">Buscar</button>
+        <input type="text" class="form fontR" placeholder="City" name="" id="" #cityName>
+        <button class="bn632-hover bn26">Search</button>
       </form>
   </div>
     <!-- <img class="img" src="../assets/Img/Day.png" alt=""> -->
+    
     <div  class="container-fluid box-info fontR">
       <div class="detalle">
         <img class="derecha" src="../assets/Img/SunCloud.png">
@@ -15,12 +20,6 @@
         <aside class="textTe">{{weather.main.temp}} ℃</aside>
         <div class="reset"></div>
       </div>
-      <!-- <div class="info" *ngIf="weather">
-        <p>*</p>
-        <p>Ciudad: {{weather.name}}</p>
-        <p>*</p>
-        <p>Temperatura: {{weather.main.temp}}</p>        
-      </div>       -->
     </div>
   </div>
 </div>
